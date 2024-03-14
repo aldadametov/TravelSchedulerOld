@@ -16,6 +16,7 @@
 		03A457892BA0DEA80092DA50 /* openapi.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 03A457882BA0DEA80092DA50 /* openapi.yaml */; };
 		03A4578B2BA0DF400092DA50 /* openapi-generator-config.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 03A4578A2BA0DF400092DA50 /* openapi-generator-config.yaml */; };
 		03A4578D2BA0E0900092DA50 /* NearestStationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A4578C2BA0E0900092DA50 /* NearestStationsService.swift */; };
+		03A457932BA105490092DA50 /* NearestSettlementService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A457922BA105490092DA50 /* NearestSettlementService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		03A457882BA0DEA80092DA50 /* openapi.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = openapi.yaml; sourceTree = "<group>"; };
 		03A4578A2BA0DF400092DA50 /* openapi-generator-config.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "openapi-generator-config.yaml"; sourceTree = "<group>"; };
 		03A4578C2BA0E0900092DA50 /* NearestStationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestStationsService.swift; sourceTree = "<group>"; };
+		03A457922BA105490092DA50 /* NearestSettlementService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestSettlementService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +66,7 @@
 				035779632B96619400E88D02 /* Travel_SchedulerApp.swift */,
 				035779652B96619400E88D02 /* ContentView.swift */,
 				035779672B96619500E88D02 /* Assets.xcassets */,
-				03A4578E2BA0E09C0092DA50 /* Network */,
+				03A4578E2BA0E09C0092DA50 /* Services */,
 				03A457872BA0DE8B0092DA50 /* Documents */,
 				035779692B96619500E88D02 /* Preview Content */,
 			);
@@ -88,12 +90,13 @@
 			path = Documents;
 			sourceTree = "<group>";
 		};
-		03A4578E2BA0E09C0092DA50 /* Network */ = {
+		03A4578E2BA0E09C0092DA50 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				03A4578C2BA0E0900092DA50 /* NearestStationsService.swift */,
+				03A457922BA105490092DA50 /* NearestSettlementService.swift */,
 			);
-			path = Network;
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				035779662B96619400E88D02 /* ContentView.swift in Sources */,
+				03A457932BA105490092DA50 /* NearestSettlementService.swift in Sources */,
 				03A4578D2BA0E0900092DA50 /* NearestStationsService.swift in Sources */,
 				035779642B96619400E88D02 /* Travel_SchedulerApp.swift in Sources */,
 			);
