@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03153A9F2BA4F38E002E82B8 /* CopyrightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03153A9E2BA4F38E002E82B8 /* CopyrightService.swift */; };
 		035779642B96619400E88D02 /* Travel_SchedulerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035779632B96619400E88D02 /* Travel_SchedulerApp.swift */; };
 		035779662B96619400E88D02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035779652B96619400E88D02 /* ContentView.swift */; };
 		035779682B96619500E88D02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 035779672B96619500E88D02 /* Assets.xcassets */; };
@@ -18,9 +19,11 @@
 		03A4578D2BA0E0900092DA50 /* NearestStationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A4578C2BA0E0900092DA50 /* NearestStationsService.swift */; };
 		03A457932BA105490092DA50 /* NearestSettlementService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A457922BA105490092DA50 /* NearestSettlementService.swift */; };
 		03A457972BA2D5A90092DA50 /* CarrierService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A457962BA2D5A90092DA50 /* CarrierService.swift */; };
+		03A4579A2BA2E7EB0092DA50 /* AllStationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A457992BA2E7EB0092DA50 /* AllStationsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03153A9E2BA4F38E002E82B8 /* CopyrightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightService.swift; sourceTree = "<group>"; };
 		035779602B96619400E88D02 /* Travel Scheduler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Travel Scheduler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		035779632B96619400E88D02 /* Travel_SchedulerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Travel_SchedulerApp.swift; sourceTree = "<group>"; };
 		035779652B96619400E88D02 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -31,6 +34,7 @@
 		03A4578C2BA0E0900092DA50 /* NearestStationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestStationsService.swift; sourceTree = "<group>"; };
 		03A457922BA105490092DA50 /* NearestSettlementService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestSettlementService.swift; sourceTree = "<group>"; };
 		03A457962BA2D5A90092DA50 /* CarrierService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierService.swift; sourceTree = "<group>"; };
+		03A457992BA2E7EB0092DA50 /* AllStationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllStationsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				03A4578C2BA0E0900092DA50 /* NearestStationsService.swift */,
 				03A457922BA105490092DA50 /* NearestSettlementService.swift */,
 				03A457962BA2D5A90092DA50 /* CarrierService.swift */,
+				03A457992BA2E7EB0092DA50 /* AllStationsService.swift */,
+				03153A9E2BA4F38E002E82B8 /* CopyrightService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -186,9 +192,11 @@
 			files = (
 				03A457972BA2D5A90092DA50 /* CarrierService.swift in Sources */,
 				035779662B96619400E88D02 /* ContentView.swift in Sources */,
+				03A4579A2BA2E7EB0092DA50 /* AllStationsService.swift in Sources */,
 				03A457932BA105490092DA50 /* NearestSettlementService.swift in Sources */,
 				03A4578D2BA0E0900092DA50 /* NearestStationsService.swift in Sources */,
 				035779642B96619400E88D02 /* Travel_SchedulerApp.swift in Sources */,
+				03153A9F2BA4F38E002E82B8 /* CopyrightService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
