@@ -333,6 +333,9 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/StationsList'
+            text/html:
+              schema:
+                $ref: '#/components/schemas/StationsList'  
   /v3.0/nearest_stations/:
     get:
       tags:
@@ -588,7 +591,6 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/Country'
-
     Country:
       type: object
       properties:
@@ -597,28 +599,63 @@ components:
           items:
             $ref: '#/components/schemas/Region'
         codes:
-          type: object
-          properties:
-            yandex_code:
-              type: string
+          $ref: '#/components/schemas/StationListCodes'
         title:
           type: string
-
     Region:
       type: object
       properties:
         settlements:
           type: array
           items:
-            $ref: '#/components/schemas/Settlement'
+            $ref: '#/components/schemas/Settlements'
         codes:
-          type: object
-          properties:
-            yandex_code:
-              type: string
+          $ref: '#/components/schemas/StationListCodes'
         title:
           type: string
-
+    Settlements:
+      type: object
+      properties:
+        title:
+          type: string
+        codes:
+          $ref: '#/components/schemas/StationListCodes'
+        stations:
+          type: array
+          items:
+            $ref: '#/components/schemas/SettlementStation'
+    SettlementStation:
+      type: object
+      properties:
+        direction:
+          type: string
+        codes:
+          $ref: '#/components/schemas/StationListCodes'
+        station_type:
+          type: string
+        title:
+          type: string
+        longitude:
+          oneOf:
+            - type: number
+            - type: string
+          nullable: true
+        transport_type:
+          type: string
+        latitude:
+          oneOf:
+            - type: number
+            - type: string
+          nullable: true
+    StationListCodes:
+      type: object
+      properties:
+        esr_code:
+          type: string
+          nullable: true
+        yandex_code:
+          type: string
+          nullable: true
     Carriers:
       type: object
       properties:

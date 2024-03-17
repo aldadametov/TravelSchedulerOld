@@ -32,7 +32,6 @@ struct ContentView: View {
     }
     
 func testSearchService() {
-        print("Attempting to search schedule...")
         do {
             let client = Client(
                 serverURL: try Servers.server1(),
@@ -65,7 +64,6 @@ func testSearchService() {
     }
     
 func testScheduleService() {
-        print("Attempting to fetch schedule...")
         do {
             let client = Client(
                 serverURL: try Servers.server1(),
@@ -103,7 +101,6 @@ func testScheduleService() {
     }
     
 func testThreadListService() {
-        print("Attempting to fetch thread list...")
         do {
             let client = Client(
                 serverURL: try Servers.server1(),
@@ -229,7 +226,6 @@ func getCarrierInfo() {
 }
 
 func testStationsListService() {
-    print("Attempting to fetch all stations...")
     do {
         let client = Client(
             serverURL: try Servers.server1(),
@@ -237,16 +233,17 @@ func testStationsListService() {
         )
         
         let service = StationsListService(
-            client: client
+            client: client,
+            apikey: "9b2141ce-cb26-49a7-8937-1d1925023295"
         )
         
         Task {
             do {
-                let stationsList = try await service.getAllStations(apiKey: "9b2141ce-cb26-49a7-8937-1d1925023295",
-                                                                    lang: "ru_RU",
-                                                                    format: "json"
-                )
-                print("Stations list successfully fetched:", stationsList)
+                let stationList = try await service.getAllStations(apiKey: "9b2141ce-cb26-49a7-8937-1d1925023295",
+                                                                   lang: nil,
+                                                                   format: nil)
+                guard let countriesCount = stationList.countries?.count else { return }
+                print("Countries count: \(countriesCount)") 
             } catch {
                 print("Error fetching stations list:", error)
             }
