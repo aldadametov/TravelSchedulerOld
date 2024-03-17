@@ -5,13 +5,6 @@
 //  Created by Алишер Дадаметов on 17.03.2024.
 //
 
-//
-//  CopyrightService.swift
-//  Travel Scheduler
-//
-//  Created by Алишер Дадаметов on 16.03.2024.
-//
-
 typealias ScheduleResponse = Components.Schemas.ScheduleResponse
 
 protocol ScheduleServiceProtocol {

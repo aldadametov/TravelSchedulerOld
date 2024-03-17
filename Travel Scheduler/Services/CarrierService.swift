@@ -2,7 +2,7 @@
 //  CarrierService.swift
 //  Travel Scheduler
 //
-//  Created by [Your Name] on [Current Date].
+//  Created by Алишер Дадаметов on 14.03.2024.
 //
 
 import OpenAPIRuntime

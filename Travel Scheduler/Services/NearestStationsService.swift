@@ -24,8 +24,6 @@ final class NearestStationsService: NearestStationsServiceProtocol {
   }
   
   func getNearestStations(lat: Double, lng: Double, distance: Int) async throws -> NearestStations {
-  // В документе с описанием запроса мы задали параметры apikey, lat, lng и distance
-  // Для вызова сгенерированной функции нужно передать эти параметры
     let response = try await client.getNearestStations(query: .init(
         apikey: apikey,
         lat: lat,
